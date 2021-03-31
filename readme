@@ -1,4 +1,13 @@
 first clone the code from github
 second make sure python3, C++ are installed and updated
 
+dudring execution, connect your STM32 with your breardboard such that the three buttons are connected to 3 DAC pins(D10,D11, D12), the analog output is D7 and analog input is A0.
+
+connect A0 with AWG from pico, and D7 to A. 
+
+I used 4 different frequecies
+I noticed that the higher the frequency, the more difficult it is to reach a peak of 3V at the RC low pass filter output. The reason is the charging time of the capacity is slower than the rise time of the dac output waveform.
+
+As for the sampling part, I could not really catch a more reasonable output as I was supposed to. Maybe the sampling frequency was not large enough, hence less data was stored.
+
 
